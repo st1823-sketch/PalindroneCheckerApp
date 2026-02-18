@@ -1,25 +1,29 @@
 /*
 MAIN CLASS - PalindromeCheckerApp
-use case1 : Apllication entry and welcome message
+use case2 :  Print a Hardcoded Palindrome Result
+
 
 @author Sathwik
-@version 1.0
+@version 2.0
  */
 
 
 
-
-
-public class PalindromeCheckerApp {
+public class  PalindromeCheckerApp {
     public static void main(String[] args) {
-        String appName = "PalindromeChecker App";
-        String appVersion = "v1.0.0";
-        System.out.println("========================================");
-        System.out.println("   Welcome to the " + appName);
-        System.out.println("   Version: " + appVersion);
-        System.out.println("========================================");
-        System.out.println("Status: Application started successfully.");
-        System.out.println("Ready for palindrome validation logic...");
-        System.out.println("----------------------------------------");
-    }
-}
+                String original = "madam";
+                String reversed = "";
+                for (int i = original.length() - 1; i >= 0; i--) {
+                    reversed += original.charAt(i);
+                }
+                System.out.println("Original String: " + original);
+                System.out.println("Reversed String: " + reversed);
+                if (original.equalsIgnoreCase(reversed)) {
+                    System.out.println("Result: The string is a palindrome.");
+                } else {
+                    System.out.println("Result: The string is NOT a palindrome.");
+                }
+            }
+        }
+
+
