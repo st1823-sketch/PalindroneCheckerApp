@@ -22,4 +22,32 @@ This project is structured to demonstrate core Java programming fundamentals and
 ### Step 1: Compilation
 Open your terminal or command prompt and run:
 ```bash
-javac UseCase1PalindromeCheckerApp.java
+javac PalindromeCheckerApp.java
+
+# Palindrome Checker App - UC2
+
+## Objective
+To design and implement a console-based Java application that validates whether a hardcoded string is a palindrome.
+
+## Key Concepts Applied
+* **Class & Main Method**: Standard entry point for Java applications.
+* **String Manipulation**: Using `.length()` and `.charAt()` to traverse text.
+* **Control Flow**: `for` loop for reversing and `if-else` for comparison.
+
+## Execution Instructions
+
+1.  **Open your terminal or command prompt.**
+2.  **Compile the program:**
+    ```bash
+    javac PalindromeCheckerApp.java
+    ```
+3.  **Run the program:**
+    ```bash
+    java PalindromeCheckerApp
+    ```
+
+## Expected Output
+```text
+Original String: madam
+Reversed String: madam
+Result: The string is a palindrome.
