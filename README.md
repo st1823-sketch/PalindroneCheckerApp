@@ -1,36 +1,39 @@
-🎯 Use Case 3: Palindrome Check Using String Reverse
-✔ Goal
+UseCase5PalindromeCheckerApp
 
-Check whether a string is a palindrome by:
+📌 Objective
 
-Reversing the string using a loop
+This console-based Java application checks whether a given string is a palindrome using a Stack data structure.
 
-Comparing the original and reversed string
+The program demonstrates how a stack (LIFO – Last In First Out) can naturally reverse characters to validate palindrome logic.
 
-Displaying the result
+🧠 Concepts Used
 
-🔁 Program Flow
+Stack (java.util.Stack)
 
-Accept input from the user.
+Push Operation – Inserts characters into the stack
 
-Reverse the string using a for loop.
+Pop Operation – Removes characters in reverse order
 
-Compare the original string with the reversed string using equals().
+LIFO Principle
 
-Display whether the string is a palindrome or not.
+String Processing
 
-🧠 Key Concepts Used
-1️⃣ Loop (for loop)
+Looping and Conditional Statements
 
-Used to iterate through the string characters in reverse order to build the reversed string.
+⚙️ How It Works
 
-2️⃣ String Immutability
+User enters a string.
 
-In Java, String objects are immutable.
-Every modification (like concatenation) creates a new String object.
+The program:
 
-3️⃣ String Concatenation (+)
+Converts input to lowercase.
 
-Used to build the reversed string character by character.
+Removes spaces.
 
-⚠ Note: This approach is simple but not memory efficient for large strings because it creates multiple String objects.
+Each character is pushed into a stack.
+
+Characters are popped from the stack and compared with the original string.
+
+If all characters match → It is a palindrome.
+
+If any character does not match → Not a palindrome.
