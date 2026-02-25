@@ -1,9 +1,9 @@
-# UC9: Recursive Palindrome Checker
+# UC10: Case-Insensitive & Space-Ignored Palindrome Checker
 
 ## 📌 Project Overview
-The **UC9 Palindrome Checker App** is a Java console application that checks whether a given string is a palindrome using **recursion**.
+The **UC10 Palindrome Checker App** is a Java console application that validates whether a given string is a palindrome **ignoring case and spaces**.
 
-This approach demonstrates the use of **call stack**, **base conditions**, and recursive problem-solving.
+It demonstrates **string preprocessing** and simple palindrome checking logic.
 
 ---
 
@@ -11,14 +11,15 @@ This approach demonstrates the use of **call stack**, **base conditions**, and r
 - Accepts user input from console
 - Ignores spaces
 - Case-insensitive comparison
-- Recursive algorithm for palindrome checking
-- Demonstrates **call stack usage** and recursion depth
+- Efficient linear scan algorithm
+- Demonstrates **string normalization** using regular expressions
 
 ---
 
 ## 🛠 Technologies Used
 - Java (JDK 8 or higher)
 - `java.util.Scanner`
+- String manipulation with `replaceAll` and `toLowerCase`
 
 ---
 
