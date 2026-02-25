@@ -1,23 +1,37 @@
-# UC11: Object-Oriented Palindrome Checker
+# UC12: Strategy Pattern for Palindrome Checker
 
 ## 📌 Project Overview
-The **UC11 Palindrome Checker App** is a Java console application that validates whether a given string is a palindrome, designed using **object-oriented principles**. The palindrome logic is encapsulated inside a dedicated service class, improving **reusability**, **readability**, and **separation of concerns**.
+The **UC12 Palindrome Checker App** demonstrates how to implement multiple palindrome validation algorithms using the **Strategy Design Pattern**. This pattern allows different palindrome checking algorithms to be selected and swapped dynamically at runtime without changing the client code.
 
 ---
 
 ## 🚀 Features
 - Accepts user input from console
-- Ignores spaces
-- Case-insensitive palindrome check
-- Encapsulated palindrome logic in `PalindromeService` class
-- Demonstrates clean object-oriented design
+- Ignores spaces and case in string preprocessing
+- Implements a **Stack-based palindrome checking algorithm**
+- Uses a **common PalindromeStrategy interface** for extensibility
+- Demonstrates **algorithm interchangeability** using Strategy pattern
 
 ---
 
 ## 🛠 Technologies Used
 - Java (JDK 8 or higher)
 - `java.util.Scanner`
+- `java.util.Stack`
 
 ---
 
 ## 📂 Project Structure
+
+---
+
+## ▶️ How It Works
+1. User inputs a string.
+2. The input is normalized (spaces removed, lowercase).
+3. The application instantiates a concrete palindrome checking strategy (`StackStrategy`).
+4. The selected strategy's `checkPalindrome()` method is invoked.
+5. The program outputs whether the string is a palindrome.
+
+---
+
+## 🧠 Algorithm Logic (StackStrategy)
