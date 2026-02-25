@@ -1,4 +1,4 @@
-/*
+package App.src;/*
 MAIN CLASS - PalindromeCheckerApp
 use case2 :  Print a Hardcoded Palindrome Result
 
