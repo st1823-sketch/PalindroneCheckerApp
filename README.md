@@ -1,60 +1,69 @@
-📌 Objective
+The UC7 Palindrome Checker App is a Java console application that checks whether a given string is a palindrome using a Deque (Double-Ended Queue) data structure.
 
-The objective of this use case is to implement a Palindrome Checker using:
+This implementation demonstrates efficient front and rear comparison using ArrayDeque, making the palindrome check optimized and clean.
 
-Queue (FIFO – First In First Out)
+🚀 Features
 
-Stack (LIFO – Last In First Out)
+Accepts user input from console
 
-This demonstrates how different data structures behave and how they can be used together to validate palindrome logic.
+Ignores spaces
 
-📚 Key Concepts Used
-1️⃣ Queue – FIFO
+Case-insensitive comparison
 
-A linear data structure where the first element added is the first removed.
+Uses Deque<Character> for optimized checking
 
-Operations used:
+Efficient front-rear character comparison
 
-add() → Enqueue
+🛠 Technologies Used
 
-remove() → Dequeue
+Java (JDK 8 or higher)
 
-2️⃣ Stack – LIFO
+java.util.ArrayDeque
 
-A linear data structure where the last element added is the first removed.
+java.util.Deque
 
-Operations used:
+java.util.Scanner
 
-push() → Insert
+📂 Project Structure
+UseCase7PalindromeCheckerApp.java
+README.md
+▶️ How It Works
 
-pop() → Remove
+The user enters a string.
 
-3️⃣ Logical Comparison
+The program:
 
-For a string to be a palindrome:
+Removes all spaces
 
-Front character (Queue - Dequeue)
-must equal
-Last character (Stack - Pop)
+Converts the string to lowercase
 
-If all characters match → It is a palindrome.
+Each character is inserted into a Deque.
 
-🛠 How It Works (Flow)
+Characters from the front and rear are removed and compared.
 
-User enters a string.
+If all characters match → It's a palindrome.
 
-Remove spaces and convert to lowercase.
+If any mismatch occurs → It's not a palindrome.
 
-For each character:
-
-Enqueue into Queue.
-
-Push into Stack.
-
-Compare:
-
-queue.remove() (FIFO)
-
-stack.pop() (LIFO)
-
-If all match → Palindrome.
+🧠 Algorithm Logic
+1. Read input string
+2. Remove spaces & convert to lowercase
+3. Insert characters into Deque
+4. While Deque size > 1:
+   Compare front and rear characters
+   If mismatch → Not palindrome
+5. Print result
+   💻 How to Run
+   1️⃣ Compile
+   javac UseCase7PalindromeCheckerApp.java
+   2️⃣ Run
+   java UseCase7PalindromeCheckerApp
+   📌 Example
+   Input
+   Enter a string to check: Madam
+   Output
+   Result: The given string IS a palindrome.
+   📈 Time & Space Complexity
+   Complexity Type	Value
+   Time Complexity	O(n)
+   Space Complexity	O(n)
